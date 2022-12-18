@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>🌍Login</title>
+  <link rel="stylesheet" href="./login.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-primary">
+  <h2>School Mangement System</h2>
+  <p>enter your Email id & Passward</p>
+  <div class="container">
+    <div class="row">
+      <div class=" col ">
+        <div class="log">
+          <form class="bg-secondary" action="index2.html" name="myform" method="post" onSign up="return validateform();">
+            <div class="fromsginup" id="name">
+              <label class="em" for="email">User Id</label>
+              <input class="iem" type="email" id="userid" placeholder="Enter your id">
+              <small id="useridval" class="form-text text-muted invalid-feedback">
+                your must be 5 dight
+              </small>
+            </div>
+            <div>
+              <label class="em" for="name">User Name</label>
+              <input class="iem" type="text" id="name" placeholder="Enter your username">
+              <small id="namevalid" class="form-text text-muted invalid-feedback">
+                Your username must be 2-10 characters long and should not start with a number
+              </small>
+            </div>
+            <div>
+              <label class="em" for="passward">Passward</label>
+              <input class="iem" type="password" placeholder="Enter your Passward">
+            </div>
+            <label class="em" for="">User type</label>
+            <select name="user">
+              <option class="from-select" value="Admin">Admin</option>
+              <option class="from-select" value="teacher">Teacher</option>
+              <option class="from-select" value="student">Student</option>
+              <option class="from-select" value="Staff">Staff</option>
+            </select><br>
+            <button class="btn btn-primary btn-lg btn-yo" type="button">Sign in</button>
+            <a href="/sign-up"><input class="btn btn-primary btn-lg btn-yo" type="button" name="Sign up"
+                value="sign up"></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="java/j.js"></script>
+</body>
+
+</html>
